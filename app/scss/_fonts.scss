@@ -1,0 +1,36 @@
+@font-face{
+  font-family: 'Mulish-Regular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local('Mulish-Regular'),
+    url('../fonts/Mulish-Regular.woff2') format('woff2'),
+    url('../fonts/Mulish-Regular.woff');
+  font-display:swap;
+}
+@font-face{
+  font-family: 'Inter-Medium', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: local('Inter-Medium'),
+    url('../fonts/Inter-Medium.woff2') format('woff2'),
+    url('../fonts/Inter-Medium.woff');
+  font-display:swap;
+}
+@font-face{
+  font-family: 'Inter-SemiBold', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  src: local('Inter-SemiBold'),
+    url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('../fonts/Inter-SemiBold.woff');
+  font-display:swap;
+}
+@font-face{
+  font-family: 'PlayfairDisplay-Bold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local('PlayfairDisplay-Bold'),
+    url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Bold.woff');
+  font-display:swap;
+}

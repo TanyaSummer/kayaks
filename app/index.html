@@ -8,8 +8,226 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  
-
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <img class="logo-img" src="images/logo.svg" alt="logo">
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link menu__list-link--active">
+                Главная
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">
+                Маршруты
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">
+                О нас
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">
+                Блог
+              </a>
+            </li>
+          </ul>
+          <div class="user-nav">
+            <button class="user-nav__link" href="#">
+              Login
+            </button>
+            <button class="user-nav__link" href="#">
+              Register
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="product-filter">
+      <div class="container">
+        <div class="product-filter__inner">
+          <div class="product-filter__content">
+            <h3 class="product-filter__title">
+              Погрузись в путешествие!
+            </h3>
+            <h4 class="product-filter__subtitle">
+              Расписание сплавов на байдарках
+            </h4>
+            <form class="product-filter__form" action="#" >
+              <select class="product-filter__date">
+                <option value="">Дата</option>
+              </select>
+              <select class="product-filter__run">
+                <option value="">Маршрут</option>
+                <option value="">Ислочь</option>
+                <option value="">Нарочанка</option>
+                <option value="">Березина</option>
+                <option value="">Страча</option>
+              </select>
+              <select class="product-filter__type">
+                <option value="">Тип сплава</option>
+                <option value="">Дневной</option>
+                <option value="">Ночной</option>
+              </select>
+              <select class="product-filter__kayak">
+                <option value="">Снаряжение</option>
+                <option value="">байдарка1</option>
+                <option value="">байдарка2</option>
+              </select>
+            </form>
+            <a class="serch-btn btn" href="#">
+              Найти
+            </a>
+          </div>
+          <img class="product-filter__img" src="images/top.png" alt="top image">
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <img src="images/about1.png" alt="about">
+          <div class="about__inner-content">
+            <h4 class="title">
+              Сплавы
+            </h4>
+            <div class="about__inner-text">
+              Тур выходного дня. Станет отличным решением для любителей активного отдыха. В зависимости от ваших пожеланий мы предлагаем вам разные уровни сложности: где-то с элементами экстрима, где-то просто с прогулками по живописным местам!
+            </div>
+            <a class="about-btn btn" href="#">
+              Подробнее
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="container">
+        <div class="popular__wrapper">
+          <div class="popular__title">
+            <h4 class="title">
+              Популярные маршруты
+            </h4>
+            <a class="popular__link" href="#">
+              Показать все
+            </a>
+          </div>
+          <div class="popular__items">
+            <div class="popular__item">
+              <a class="popular__item-image" href="#" >
+                <img class="popular__item-img" src="images/content/1.png" alt="popular">
+              </a>
+              <div class="popular__item-box">
+                <span class="popular__item-title">
+                  р. Ислочь
+                </span>
+                <span class="popular__item-subtitle">
+                  Беларусь
+                </span>
+              </div>
+            </div>
+            <div class="popular__item">
+              <a class="popular__item-image" href="#" >
+                <img class="popular__item-img" src="images/content/2.png" alt="popular">
+              </a>
+              <div class="popular__item-box">
+                <span class="popular__item-title">
+                  р. Ислочь
+                </span>
+                <span class="popular__item-subtitle">
+                  Беларусь
+                </span>
+              </div>
+            </div>
+            <div class="popular__item">
+              <a class="popular__item-image" href="#" >
+                <img class="popular__item-img" src="images/content/3.png" alt="popular">
+              </a>
+              <div class="popular__item-box">
+                <span class="popular__item-title">
+                  р. Ислочь
+                </span>
+                <span class="popular__item-subtitle">
+                  Беларусь
+                </span>
+              </div>
+            </div>
+            <div class="popular__item">
+              <a class="popular__item-image" href="#" >
+                <img class="popular__item-img" src="images/content/4.png" alt="popular">
+              </a>
+              <div class="popular__item-box">
+                <span class="popular__item-title">
+                  р. Ислочь
+                </span>
+                <span class="popular__item-subtitle">
+                  Беларусь
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__inner-content">
+            <h4 class="title">
+              Прокат туристического снаряжения
+            </h4>
+            <div class="about__inner-text">
+              Мало кто из нас занимается туризмом без перерыва. Большинство из нас выбираются на отдых несколько раз в год. Вот почему целесообразно заказать услугу прокат туристического снаряжения. При этом наша задача — снабдить всем, что требуется для похода. Если вы теряетесь в догадках и мучитесь вопросом «Что взять?», то спешим обрадовать. Мы…
+            </div>
+            <a class="about-btn btn" href="#">
+              Подробнее
+            </a>
+          </div>
+          <img src="images/about2.png" alt="about">
+        </div>
+      </div>
+    </section>
+    <section class="guide">
+      <div class="container">
+        <h4 class="guide-title title">
+          Наша команда
+        </h4>
+        <div class="guide__inner">
+          <div class="guide__content">
+            <div class="star" data-rateyo-rating="4.5">
+            </div>
+            <div class="guide__text">
+              “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”
+            </div>
+            <div class="guide__name">
+              Edward Newgate
+            </div>
+            <div class="guide__status">
+              Founder Circle
+            </div>
+          </div>
+          <div class="guide__slick">
+            <div class="guide__image">
+              <img class="guide__img" src="images/guide.png" alt="guide">
+            </div>
+            <div class="gide__image">
+              <img class="guide__img" src="images/guide.png" alt="guide">
+            </div>
+            <div class="gide__image">
+              <img class="guide__img" src="images/guide.png" alt="guide">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="js/main.min.js"></script>
 </body>
 </html>

@@ -3,4 +3,254 @@
 @import 'reset';/*сюда пишу reset.css*/
 @import 'global';/*что я пишу для body, для ссылок и т.д*/
 @import 'media'; /*медиазапросы*/
+@import 'libs'; /*медиазапросы*/
 
+.header{
+  margin: 32px 0 75px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menu{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-link{
+    color: #B8BECD;
+  }
+  &__list-link--active{
+    color: $black;
+    @extend %inter-500;
+  }
+  &__list-item{
+    margin-right: 30px;
+  }
+}
+.user-nav{
+  display: flex;
+  justify-content: space-between;
+  
+  &__link{
+    color: $orange;
+    // padding: 16px 46px;
+    width: 132px;
+    height: 43px;
+    border: 1px solid $orange;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  &__link + .user-nav__link{
+    background-color: $orange;
+    color: #fff;
+    margin-left: 18px;
+  }
+}
+.product-filter{
+  margin-bottom: 288px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    flex: 1 1 0;
+  }
+  &__img {
+    flex: 1 1 0;
+  }
+  &__title{
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 100px;
+    max-width: 435px;
+    color: $black;
+    @extend %playfair-700;
+  }
+  &__subtitle{
+    @extend %inter-600;
+    font-size: 22px;
+    line-height: 27px;
+    color: $black;
+    margin-bottom: 70px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 32px;
+      height: 2px;
+      background-color: $black;
+    }
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 470px;
+    gap: 30px;
+    margin-bottom: 47px;
+  }
+  &__date,
+  &__run,
+  &__type,
+  &__kayak {
+    font-size: 15px;
+    line-height: 15px;
+    border-radius: 5px;
+    border: 1px solid #AFB0B9;
+    padding: 16px 30px;
+    appearance: none;
+    outline: none;
+    background: url('../images/icon/frame.svg') no-repeat right;
+    background-position-x: calc(100% - 30px);
+  }
+  &__img{
+    min-width: 602px;
+  }
+}
+.about{
+  margin-bottom: 262px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      max-width: 596px;
+      flex: 1 1 0
+    }
+  }
+  &__inner-content{
+    max-width: 450px;
+    flex: 1 1 0
+  }
+  &__inner-text{
+    margin-bottom: 35px;
+  }
+  &__about-btn{
+    display: inline-block;
+  }
+}
+.popular{
+  margin-bottom: 232px;
+  &__wrapper{
+    margin: 0 50px;
+  }
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link{
+    display: inline-block;
+    color: $orange;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: url('../images/icon/arrow-right.svg');
+      width: 6px;
+      height: 10px;
+      top: 11px;
+      left: 110px;
+    }
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    position: relative;
+  }
+  &__item-img{
+    border-radius: 6px;
+  }
+  &__item-box{
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-top-right-radius: 6px;
+    padding: 11px 33px 0 0;
+    position: absolute;
+    top: 270px;
+    left: 0;
+  }
+  &__item-title{
+    color: $black;
+    @extend %inter-600;
+    
+
+  }
+  &__item-subtitle{
+    @extend %inter-500;
+  }
+}
+.guide{
+  margin-bottom: 350px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    max-width: 450px;
+    color: $black;
+  }
+  &__text{
+    margin-bottom: 40px;
+  }
+  &__slick{
+    max-width: 41%;
+    padding-right: 3px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 132px;
+      height: 60px;
+      background-color: #fff;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      bottom: 8px;
+      left: 255px;
+      z-index: 1;
+
+    }
+  }
+  .star{
+  margin-bottom: 30px;
+  }
+  &__name{
+    color: $black;
+    @extend %inter-600;
+  }
+  &__img{
+    border-radius: 6px;
+  }
+  .slick-arrow{
+    background-color: #fff;
+    border: 2px solid $black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .slick-prev{
+    position: absolute;
+    bottom: 10px;
+    right: 170px;
+    z-index: 2;
+  }
+  .slick-next{
+    position: absolute;
+    bottom: 10px;
+    right: 110px;
+    z-index: 2;
+  }
+  
+  
+}
