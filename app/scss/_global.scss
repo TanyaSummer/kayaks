@@ -28,4 +28,9 @@ body{
   color: #fff;
   padding: 16px 63px;
   border-radius: 5px;
+  &:hover{
+    background-color: #fff;
+    color: $orange;
+    border: 1px solid $orange;
+  }
 }

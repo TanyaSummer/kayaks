@@ -11,10 +11,13 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <div class="logo">
+        <a class="logo" href="#">
           <img class="logo-img" src="images/logo.svg" alt="logo">
-        </div>
+        </a>
         <nav class="menu">
+          <button class="menu-btn">
+            <span></span>
+          </button>
           <ul class="menu__list">
             <li class="menu__list-item">
               <a href="#" class="menu__list-link menu__list-link--active">
@@ -86,16 +89,20 @@
               Найти
             </a>
           </div>
-          <img class="product-filter__img" src="images/top.png" alt="top image">
+          <div class="product-filter__image">
+            <img class="product-filter__img" src="images/top.png" alt="top image">
+          </div>
         </div>
       </div>
     </section>
     <section class="about">
       <div class="container">
         <div class="about__inner">
-          <img src="images/about1.png" alt="about">
+          <div class="about__inner-image">
+            <img class="about__inner-img"src="images/about1.png" alt="about">
+          </div>
           <div class="about__inner-content">
-            <h4 class="title">
+            <h4 class="about__inner-title title">
               Сплавы
             </h4>
             <div class="about__inner-text">
@@ -110,9 +117,9 @@
     </section>
     <section class="popular">
       <div class="container">
-        <div class="popular__wrapper">
+        <div class="popular__inner">
           <div class="popular__title">
-            <h4 class="title">
+            <h4 class="popular__title-text title">
               Популярные маршруты
             </h4>
             <a class="popular__link" href="#">
@@ -125,12 +132,12 @@
                 <img class="popular__item-img" src="images/content/1.png" alt="popular">
               </a>
               <div class="popular__item-box">
-                <span class="popular__item-title">
+                <a class="popular__item-title" href="#">
                   р. Ислочь
-                </span>
-                <span class="popular__item-subtitle">
+                </a>
+                <a class="popular__item-subtitle" href="#">
                   Беларусь
-                </span>
+                </a>
               </div>
             </div>
             <div class="popular__item">
@@ -138,12 +145,12 @@
                 <img class="popular__item-img" src="images/content/2.png" alt="popular">
               </a>
               <div class="popular__item-box">
-                <span class="popular__item-title">
+                <a class="popular__item-title" href="#">
                   р. Ислочь
-                </span>
-                <span class="popular__item-subtitle">
+                </a>
+                <a class="popular__item-subtitle" href="#">
                   Беларусь
-                </span>
+                </a>
               </div>
             </div>
             <div class="popular__item">
@@ -151,12 +158,12 @@
                 <img class="popular__item-img" src="images/content/3.png" alt="popular">
               </a>
               <div class="popular__item-box">
-                <span class="popular__item-title">
+                <a class="popular__item-title" href="#">
                   р. Ислочь
-                </span>
-                <span class="popular__item-subtitle">
+                </a>
+                <a class="popular__item-subtitle" href="#">
                   Беларусь
-                </span>
+                </a>
               </div>
             </div>
             <div class="popular__item">
@@ -164,19 +171,19 @@
                 <img class="popular__item-img" src="images/content/4.png" alt="popular">
               </a>
               <div class="popular__item-box">
-                <span class="popular__item-title">
+                <a class="popular__item-title" href="#">
                   р. Ислочь
-                </span>
-                <span class="popular__item-subtitle">
+                </a>
+                <a class="popular__item-subtitle" href="#">
                   Беларусь
-                </span>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="about">
+    <!-- <section class="about">
       <div class="container">
         <div class="about__inner">
           <div class="about__inner-content">
@@ -193,11 +200,11 @@
           <img src="images/about2.png" alt="about">
         </div>
       </div>
-    </section>
-    <section class="guide">
+    </section> -->
+    <!-- <section class="guide">
       <div class="container">
         <h4 class="guide-title title">
-          Наша команда
+          Наши инструкторы
         </h4>
         <div class="guide__inner">
           <div class="guide__content">
@@ -214,20 +221,190 @@
             </div>
           </div>
           <div class="guide__slick">
-            <div class="guide__image">
-              <img class="guide__img" src="images/guide.png" alt="guide">
-            </div>
-            <div class="gide__image">
-              <img class="guide__img" src="images/guide.png" alt="guide">
-            </div>
-            <div class="gide__image">
-              <img class="guide__img" src="images/guide.png" alt="guide">
-            </div>
+              <div class="guide__image">
+                <img class="guide__img" src="images/guide.png" alt="guide">
+              </div>
+              <div class="gide__image">
+                <img class="guide__img" src="images/guide.png" alt="guide">
+              </div>
+              <div class="gide__image">
+                <img class="guide__img" src="images/guide.png" alt="guide">
+              </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    <!-- <section class="blog">
+      <div class="container">
+        <div class="blog__title">
+          <h4 class="title">
+            Популярное в блоге
+          </h4>
+          <a class="blog__link" href="#">
+            Показать все
+          </a>
+        </div>
+        <div class="blog__items">
+          <div class="blog__item">
+            <a class="blog__item-image" href="#">
+              <img class="blog__item-img" src="images/blog/1.png" alt="blog">
+            </a>
+            <h5 class="blog__item-title">
+              Белаусские Мальдивы
+            </h5>
+            <div class="blog__item-text">
+              Белорусскими Мальдивами, по сути, являются меловые карьеры. Это относительно новая достопримечательность, которая ...
+            </div>
+            <a class="blog__item-link" href="#">
+              Читать далее...
+            </a>
+          </div>
+          <div class="blog__item">
+            <a class="blog__item-image" href="#">
+              <img class="blog__item-img" src="images/blog/2.png" alt="blog">
+            </a>
+            <h5 class="blog__item-title">
+              Выбираем снаряжение для
+              похода в Декатлоне и
+              Спортмастере
+            </h5>
+            <div class="blog__item-text">
+              Для многих не туристов-походников, либо далеких от...
+            </div>
+            <a class="blog__item-link" href="#">
+              Читать далее...
+            </sp>
+          </div>
+          <div class="blog__item">
+            <a class="blog__item-image" href="#">
+              <img class="blog__item-img" src="images/blog/3.png" alt="blog">
+            </a>
+            <h5 class="blog__item-title">
+              Сплав по реке на байдарке
+              осенью 2021.
+            </h5>
+            <div class="blog__item-text">
+              Золотая осень на байдарке. Байдарочный поход в октябре стал для меня сплавом, который изменяет стереотипы...
+            </div>
+            <a class="blog__item-link" href="#">
+              Читать далее...
+            </sp>
+          </div>
+          <div class="blog__item">
+            <a class="blog__item-image" href="#">
+              <img class="blog__item-img" src="images/blog/4.png" alt="blog">
+            </a>
+            <h5 class="blog__item-title">
+              Какие вещи необходимо с
+              собой взять?
+            </h5>
+            <div class="blog__item-text">
+              Рассказываем о снаряжении для сплава по реке. Теперь вы точно ничего не забудете и выйдете сухими из воды...
+            </div>
+            <a class="blog__item-link" href="#">
+              Читать далее...
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
   </main>
+  <!-- <footer class="footer">
+    <div class="container">
+      <ul class="footer-top__items">
+        <li class="footer-top__item">
+          <a class="footer-top__logo" href="#">
+            <img class="footer-top__logo-img" src="images/logo.svg" alt="logo">
+          </a>
+          <div class="footer-top__item-text">
+            Plan and book your perfect trip with 
+            expert advice, travel tips destination
+            information from us
+          </div>
+          <span class="footer-top__item-copyright">
+            ©2020 Thousand Sunny. All rights reserved
+          </span>
+        </li>
+        <li class="footer-top__item">
+          <div class="footer-top__item-title">
+            Destinations
+          </div>
+          <a class="footer-top__item-link" href="#" >
+            Africa
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Antarctica
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Asia
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Europe
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            America
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <div class="footer-top__item-title">
+            Destinations
+          </div>
+          <a class="footer-top__item-link" href="#" >
+            Africa
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Antarctica
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Asia
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Europe
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            America
+          </a>
+        </li>
+        <li class="footer-top__item">
+          <div class="footer-top__item-title">
+            Destinations
+          </div>
+          <a class="footer-top__item-link" href="#" >
+            Africa
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Antarctica
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Asia
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            Europe
+          </a>
+          <a class="footer-top__item-link" href="#" >
+            America
+          </a>
+        </li>
+      </ul>
+      <div class="footer-bootom">
+        <a class="footer-bootom__link" href="#">
+          <img src="images/icon/social/twitter.svg" alt="twitter" class="footer-bootom__img">
+        </a>
+        <a class="footer-bootom__link" href="#">
+          <img src="images/icon/social/facebook.svg" alt="facebook" class="footer-bootom__img">
+        </a>
+        <a class="footer-bootom__link" href="#">
+          <img src="images/icon/social/instagram.svg" alt="instagram" class="footer-bootom__img">
+        </a>
+        <a class="footer-bootom__link" href="#">
+          <img src="images/icon/social/linkedin.svg" alt="linkedin" class="footer-bootom__img">
+        </a>
+        <a class="footer-bootom__link" href="#">
+          <img src="images/icon/social/youtube.svg" alt="youtube" class="footer-bootom__img">
+        </a>
+      </div>
+    </div>
+  </footer> -->
   <script src="js/main.min.js"></script>
 </body>
 </html>
