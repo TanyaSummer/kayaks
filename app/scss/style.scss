@@ -284,6 +284,8 @@
   &__link{
     display: inline-block;
     color: $orange;
+    margin-right: 15px;
+    row-gap: 20px;
     position: relative;
     &::before{
       position: absolute;
@@ -299,7 +301,8 @@
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
-    height: 446px;
+    // height: 446px;
+    gap: 10px;
   }
   &__item{
     display: flex;
